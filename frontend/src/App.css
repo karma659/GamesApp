@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-:root {
+.root {
   --font-roboto: "Roboto Slab", serif;
   --font-raleway: "Raleway", sans-serif;
 }
@@ -74,7 +74,7 @@ h1 {
   cursor: pointer;
 }
 
-/* .search button {
+ .search button {
   padding: 20px 40px;
   border-radius: 0.5rem;
   margin-left: 15px;
@@ -87,7 +87,7 @@ h1 {
   background: #1f2123;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-} */
+} 
 
 .empty {
   width: 100%;
@@ -132,14 +132,17 @@ h1 {
   position: absolute;
   padding: 16px;
   width: 100%;
-  opacity: 0;
+  opacity: 100%;
   top: 0;
-  color: #f9d3b4;
+  color: rgb(255, 4, 4);
+  font-weight: 900;
+  font-family: "Raleway";
 }
 
 .movie:hover {
-  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-  transform: scale(1.05, 1.05);
+  box-shadow: 0px 30px 18px -8px rgba(126, 122, 122, 0.1);
+  transform:scale(1.05, 1.05);
+  opacity: 80%;
 }
 
 .movie div:nth-of-type(2) {
@@ -172,7 +175,7 @@ h1 {
   color: #f8f1f1;
 }
 
-.movie div:nth-of-type(3) h3 {
+.movie div:nth-of-type(3) h3,h4 {
   margin-top: 5px;
   font-family: "Roboto Slab", serif;
   color: #fcf9f7;
@@ -188,7 +191,7 @@ h1 {
 }
 
 .movie:hover div:nth-of-type(1) {
-  opacity: 1;
+  opacity: 10;
 }
 
 @media screen and (max-width: 600px) {
